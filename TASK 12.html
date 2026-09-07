@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            background-color: black ;
+        }
+        body{
+            display:flex;
+            justify-content:center;
+            text-align:center;
+        }
+        .first{
+            display:felx;
+            flex-direction: column;
+        }
+        .hologram{
+            margin-top:150px;
+            color:rgb(91, 186, 186);
+            background-color: rgba(253, 247, 247, 0);
+            justify-content: center;
+            width:250px;
+            height:300px;
+            border: 2px solid rgba(112, 30, 30, 0.721);
+            align-items: center;
+            display:flex;
+            font-size: 45px ;
+            border-radius:10px;
+        }
+        .hologram:hover{
+            box-shadow: 0px 2px 20px rgb(28, 142, 142);
+            width:260px;
+            height:310px;
+        }
+        .tild{
+            margin-top:50px;
+            color:white;
+            width:250px;
+            height:50px;
+            border:2px solid rgba(112, 30, 30, 0.721);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            border-radius: 20px;
+            background-color:rgb(91, 186, 186);
+            font-size: 20px;
+        }
+        .tild p{
+             background-color: transparent;
+        }
+        .tild:hover {
+           border-radius: 10px;
+           transform: rotate(15deg);
+}
+
+    </style>
+</head>
+<body>15
+    <div class="first">
+        <div class="hologram"><p>Hologram</p></div>
+        <div class="tild"><p>TRANSFORM</p></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: darkkhaki;
+        }
+        h1{
+            text-align:center;
+            border-style:dashed;
+            border-width:2px;
+            background-color:darkcyan;
+            color:rgb(1, 22, 4);
+        }
+        h4{
+            font-size:larger;
+            
+        }
+        p{
+            text-align:justify;
+        }
+        .form{
+            background-color:coral;
+            border-style:dotted;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HEADING</h1>
+    <h4>Lorem</h4>
+    <p style="font-family:cursive">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae explicabo cum beatae incidunt quas? Debitis libero nobis inventore molestiae, blanditiis, consequuntur, repellendus mollitia harum odio delectus dolorum illum neque dicta hic est odit magnam saepe possimus itaque? Perspiciatis debitis placeat nesciunt quam voluptatum quisquam saepe eius maxime atque quos eaque cupiditate error, quibusdam vitae molestiae dolorem iure dolor illo ipsam. Accusamus nobis, voluptatibus excepturi culpa blanditiis repellat sunt laboriosam consequuntur est nisi officiis aliquam sint magni quod laborum magnam ipsa nulla placeat. Sequi est ad voluptatem rerum, natus hic sint nihil commodi repellendus voluptatibus quasi itaque tempore. Omnis numquam eligendi earum illo veniam fuga fugiat repellendus nesciunt nihil ab laudantium, molestias, aperiam labore praesentium consequuntur? Cum non tenetur blanditiis amet accusamus accusantium asperiores debitis, illum maiores nemo consequuntur reprehenderit quod nobis velit beatae mollitia eveniet. Voluptas recusandae nobis, architecto dolor quasi cupiditate quam aspernatur quisquam dolorum, culpa repellat minus voluptates.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda laboriosam ullam a quos cum obcaecati sunt nemo, dignissimos maiores quia doloremque saepe vero asperiores fugit ducimus consequuntur laudantium eveniet. Numquam voluptate voluptatem dignissimos animi vero a dolore aut quia praesentium, sequi nostrum laboriosam quidem id, repellat quae tempore cum ipsum?</p>
+    <h2 style="text-align: center; color:rgb(32, 18, 4); background-color: rgb(10, 94, 105);">Form</h2>
+    
+    <form class="form">
+        <fieldset>
+            <legend >Fill Form</legend>
+        <label for="username">Enter your name :</label>
+        <input name="username" id="username" type="text" placeholder="Enter your full name" required>
+        <br><br>
+        <label for="email">Email :</label>
+        <input name="email" id="email" type="email"placeholder="abc@gmail.com" required>
+        <br><br>
+        <label for="password">Enter password</label>
+        <input name="password" id="password" type="password" required>
+        <br><br>
+        <label for="number">Number</label>
+        <input name="number" id="number" type="number" required>
+        <br><br>
+        <label for="date">Date :</label>
+        <input id="date" name="date" type="date" required>
+        <br><br>
+        <label for="file">Upload file :</label>
+        <input name="file" id="file" type="file" required>
+        <br><br>
+        <label for="gender">Gender :</label>
+        <input name="gender" id="gender" type="radio" value="male"> male
+        <input name="gender" id="gender" type="radio" value="female">female
+        <input name="gender" id="gender" type="radio" value="other">other
+        <br><br>
+        <label for="intrest">Choice :</label>
+        <input name="intrest" id="intrest" type="checkbox" value="cricket"> cricket
+        <input name="intrest" id="intrest" type="checkbox" value="singing"> singing
+        <input name="intrest" id="intrest" type="checkbox" value="dancing"> dancing
+        <input name="intrest" id="intrest" type="checkbox" value="football"> football
+        <br><br>
+        <label for="range">Range :</label>
+        <input name="range" id="range" type="range" max="100" min="0" value="50">
+        <br><br>
+        <button type="submit"> Submit</button>
+        <br><br>
+        <button type="reset">Reset</button>
+        </fieldset>
+        
+    </form>
+    
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Animation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-box {
+            background-color: yellow;
+            width: 80%;
+            height: 400px;
+            margin: 80px auto 0;
+            position: relative;
+        }
+
+        .box {
+            background-color: black;
+            width: 70px;
+            height: 70px;
+            position: absolute;
+
+            animation: boxanimation 5s linear infinite;
+        }
+
+        @keyframes boxanimation {
+
+            /* Top-left */
+            0% {
+                left: 0;
+                top: 0;
+            }
+
+            /* Top-right */
+            25% {
+                left: calc(100% - 70px);
+                top: 0;
+            }
+
+            /* Bottom-right */
+            50% {
+                left: calc(100% - 70px);
+                top: calc(100% - 70px);
+            }
+
+            /* Bottom-left */
+            75% {
+                left: 0;
+                top: calc(100% - 70px);
+            }
+
+            /* Back to top-left */
+            100% {
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-box">
+        <div class="box"></div>
+    </div>
+
+</body>
+</html>

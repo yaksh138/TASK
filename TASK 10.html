@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           margin:0px;
+           padding:0px;
+           box-sizing: border-box;
+        }
+        body{
+               background-image: url("https://images.unsplash.com/photo-1524429656589-6633a470097c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+               height:100vh;
+               background-size: cover;
+               background-position: center;
+            }
+        .head{
+            display:flex;
+            justify-content:space-between;
+            margin-top:25px;
+            padding-left: 30px;
+            padding-right: 35px;
+            color:ghostwhite;
+        }
+        .title{}
+        .nav{
+            display:flex;
+            gap:35px;
+            
+        }
+        .middle{
+            margin-top:40px;
+            text-align: center;
+            font-size: 40px;
+        }
+        .bottom{
+            border-radius: 15px;
+            margin:20px 25px 0px 25px;
+            margin-top:100px;
+            padding:10px;
+            border:2px solid rgba(0, 0, 0, 0.219);
+            background-color:rgba(0, 0, 0, 0.655);
+            
+        }
+        .inquery{
+            margin:15px;
+            background-color: white;
+            border-radius: 15px;
+            border:2px solid white;
+        }
+        form {
+            display:flex;
+            justify-content:space-between;
+            margin:15px;
+            
+        }
+        .upperline{
+            width:85%;
+        }
+        .name{
+            display:flex;
+            justify-content:space-between;
+        }
+        .bottomline{ 
+            display:flex;
+            justify-content:space-between;
+        }
+        label{
+            font-weight:bold;
+            margin-bottom: 7px;
+        }
+        input{
+            border:none;
+            padding-left:30px;
+            outline:line;
+            background-color: white;
+        }
+
+
+
+button {
+  padding:10px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+    </style>
+</head>
+<body>
+  <div class="head">
+        <div class="title"><h1>TourTravel</h1></div>
+        <div class="nav"><p>Home</p><p>About</p><p>Packageus</p><p>Trending</p><p>ContectUS</p></div>
+    </div>
+    <div class="middle"><h2>Exploring World with Us !</h2></div>
+    <div class="bottom">
+  <div class="inquery">
+    <form> 
+        <div class="upperline">
+            <div class="name">
+                <label for="place">Where you want to go?</label>
+                 <label for="check">Check In</label>
+                  <label for="out">Check Out</label>
+                  <label for="member">How Many are You?</label>
+            </div>
+            <div class="bottomline">
+                <input id="place" name="place" placeholder="Zip code / Country" required>
+                <input id="check" name="check" type="date" required>
+                <input id="out" name="out" type="date" required>
+                 <input id="member" name="member" type="number" placeholder="Guests" required style="text-align: center;">
+            </div>
+        </div>
+        <div class="side"> <button type="submit">Check Availability</button></div>
+    </form>
+  </div>
+</div>
+
+
+</body>
+</html>
