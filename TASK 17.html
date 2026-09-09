@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        body{
+            overflow: hidden;
+        }
+        .background{
+            position: relative;
+            overflow:hidden;
+        }
+        .city {
+            width:600%;
+            height:100vh;
+            overflow:hidden;
+               animation: bacground 10s linear infinite;   
+  
+        }
+        .road img{
+            height:20vh;
+            overflow: hidden;
+            width:600%;
+            position:absolute;
+            bottom:0px;
+            animation: bacground 10s linear infinite;   
+
+        }
+        .building{
+            background-image:url("");
+        }
+        .road img{
+            height:20vh;
+            overflow: hidden;
+            width:600%;
+            position:absolute;
+            bottom:0px;
+
+        }
+        .car img{
+            height:200px;
+            width:350px;
+            overflow: hidden;
+            position:absolute;
+            bottom: 0px;
+            left:40%;
+           
+        }
+
+        .right{
+            bottom: 0px;
+            position:absolute;
+            right:40.5%;
+        }
+        .left{
+            bottom: 0px;
+            position:absolute;
+            left:42%;
+        }
+        .right img{
+            width:74px;
+            height:74px;
+            animation: wheel 5s linear infinite;
+            bottom:13px;
+        }
+        .left img{
+            width:75px;
+            height:75px;
+            animation: wheel 5s linear infinite;
+            bottom:13px;
+        }
+
+        @keyframes bacground{
+                  from{
+                         transform:translateX(0%);
+                  }
+                  to{
+                       transform:translateX(-78%);
+                  }
+        }
+        @keyframes wheel{
+                  from{
+                         transform:rotate(0deg);
+                  }
+                  to{
+                       transform:rotate(360deg);
+                  }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background"><img class="city" src="https://img.magnific.com/free-vector/city-building-view-daytime_1308-105320.jpg?semt=ais_hybrid&w=740&q=80">
+        <div  class="building"></div>
+        <div  class="road"><img src="https://www.shutterstock.com/shutterstock/videos/1027330685/thumb/1.jpg?ip=x480"></div>
+        <div  class="car"><img src="https://www.pngall.com/wp-content/uploads/14/Cartoon-Car-PNG-Image-File.png">
+        <div class="right"><img src="https://png.pngtree.com/png-vector/20240327/ourmid/pngtree-realistic-car-wheel-tyre-png-image_12219562.png"></div>
+        <div class="left"><img src="https://png.pngtree.com/png-vector/20240327/ourmid/pngtree-realistic-car-wheel-tyre-png-image_12219562.png"></div>
+        </div>
+        </div>
+</body>
+</html>
